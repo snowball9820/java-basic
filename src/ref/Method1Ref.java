@@ -2,11 +2,13 @@ package ref;
 
 public class Method1Ref {
     public static void main(String[] args) {
-        Student student1 = new Student(); //객체1
-        initStudent(student1,"학생1",15,90);//지금 참조값을 통해 인스턴스를 이렇게 저장해둠
+        Student student1 = new Student(); //객체1 x001 -객체 생성
+        initStudent(student1,"학생1",15,90);//지금 참조값을 통해 인스턴스를 이렇게 저장해둠 -초기화
 
-        Student student2 = new Student(); //객체2
-        initStudent(student2,"학생2",16,80);//지금 참조값을 통해 인스턴스를 이렇게 저장해둠
+        Student student2 = new Student(); //객체2 x002 -객체 생성
+        initStudent(student2,"학생2",16,80);//지금 참조값을 통해 인스턴스를 이렇게 저장해둠 -초기화
+
+        //->객체 생성 초기화 한번에 가능
 
         printStudent(student1);
         printStudent(student2);
@@ -22,6 +24,11 @@ public class Method1Ref {
         student.age=age; //참조값을 통해서 student.age에 접근하는데 매개변수 age에 들어온 값을 넣어주게 된다.
         student.grade = grade; //참조값을 통해서 student.grade에 접근하는데 매개변수 grade에 들어온 값을 넣어주게 된다.
     }
+//    static void initStudent(Student student=x001, String name, int age, int grade) {
+//        x001.name=name; //참조값을 통해서 x001.name에 접근하는데 매개변수 name에 들어온 값을 넣어주게 된다.
+//        x001.age=age; //참조값을 통해서 x001.age에 접근하는데 매개변수 age에 들어온 값을 넣어주게 된다.
+//        x001.grade = grade; //참조값을 통해서 x001.grade에 접근하는데 매개변수 grade에 들어온 값을 넣어주게 된다.
+//    }
 
 
     //이제 student1, student2 인스턴스에 저장된 값들을 대입하고 결과가 출력되도록 해줌
