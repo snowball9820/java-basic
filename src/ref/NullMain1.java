@@ -12,4 +12,7 @@ public class NullMain1 {
         System.out.println("3. data = " + data);
     }
 
+    //더이상 참조하지 않는 인스턴스틑 자바가 자동으로 JVM의 GC(Garbage Collection)을 통해 삭제
+    //해당 객체를 참조하는 곳이 있으면 JVM이 종료될 때 까지 계속 생존 그러나 중간에 참조하는 곳이 모두 사라지면 GC를 이용해 삭제
+
 }
