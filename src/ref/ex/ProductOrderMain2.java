@@ -13,7 +13,7 @@ public class ProductOrderMain2 {
 
 
         printOrders(orders);
-        int totalAmount = getTotalAmount(orders);
+        int totalAmount = getTotalAmount(orders); //ctrl+alt+v > int totalAmount를 추측해서 자동 생성 단축키
 
         System.out.println("총 결제 금액 : " + totalAmount);
 
