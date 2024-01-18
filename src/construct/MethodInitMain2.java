@@ -1,4 +1,4 @@
-package contruct;
+package construct;
 
 public class MethodInitMain2 {
     public static void main(String[] args) {

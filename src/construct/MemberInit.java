@@ -1,4 +1,4 @@
-package contruct;
+package construct;
 
 public class MemberInit {
     String name;
@@ -13,6 +13,12 @@ public class MemberInit {
         this.name = name;
         this.age=age;
         this.grade = grade;
+
+        //this.name=name; 오른쪽 name은 매개변수 접근
+        //this.name="user"; name 매개변수의 값 사용
+        //x001.name="user"; this. 은 인스턴스 자신의 참조값을 뜻함, 따라서 인스턴스의 멤버 변수에 접근
+        //this를 빼면 값이 세팅이 안됨
+        //매개변수 이름과 멤버 변수 이름이 같은 경우 this를 통해 구분해줌
 
     }
 

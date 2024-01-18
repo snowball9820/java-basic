@@ -1,14 +1,17 @@
-package contruct;
+package construct;
 
-public class MethodInitMain3 {
+public class MethodInitMain1 {
     public static void main(String[] args) {
         MemberInit member1 = new MemberInit();
-        member1.initMember("user1", 15, 90);
-
+        member1.name = "user1";
+        member1.age = 15;
+        member1.grade = 90;
 
         MemberInit member2 = new MemberInit();
-        member2.initMember("user2", 16, 80);
 
+        member2.name = "user2";
+        member2.age = 16;
+        member2.grade = 80;
 
         MemberInit[] members = {member1, member2};
 
@@ -21,4 +24,3 @@ public class MethodInitMain3 {
 
 
 }
-
