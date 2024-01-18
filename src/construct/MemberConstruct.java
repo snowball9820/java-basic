@@ -12,9 +12,13 @@ public class MemberConstruct {
 
     //추가 (생성자 오버로딩)
     MemberConstruct(String name, int age) {
-        this.name=name;
-        this.age = age;
-        this.grade=50; //name과 age 값만 들어오면 grade는 자동으로 50
+//        this.name=name;
+//        this.age = age;
+//        this.grade=50; //name과 age 값만 들어오면 grade는 자동으로 50
+        //코드 변경
+        this(name, age, 50);//이 코드는 첫번째 생성자 내부에서 두번째 생성자를 호출
+        //this()를 사용하면 생성자 배부에서 다른 생성자를 호출가능 -> 중복제거
+        //this()는 무조건 생성자에서 첫번째 문장에 해당해야 함 두번째 줄 이상이면 오류 남
     }
 
     MemberConstruct(String name, int age, int grade) {
