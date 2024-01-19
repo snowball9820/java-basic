@@ -8,7 +8,9 @@ public class Speaker {
     //스피커는 음량을 높이고,내리고,현재 음량 확인하는 단순 기능 제공
     //스피커 음량은 100까지만 증가 가능 넘기면 안됨
 
-    int volume;
+    private int volume; //private를 써주면 이 안에서만 사용할 수 있게 됨
+    //volume 필드를 Speaker 내부에 숨김
+
 
     //생성자
     Speaker(int volume) {
