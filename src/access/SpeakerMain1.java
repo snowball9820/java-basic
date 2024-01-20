@@ -18,7 +18,7 @@ public class SpeakerMain1 {
         //업그레이드 버전의 스피커-> 스피커 음량 최대가 100이었는데 200으로 올리고 싶음
         //필드에 직접 접근
         System.out.println("volume 필드에 직접 접근&수정 불가");
-//        speaker.volume=200;
+//        speaker.volume=200;e
         speaker.showVolume();
 
         //speaker 객체를 사용하는 사용자가 Speaker의 volume 필드와 메서드에 모두 접근할 수 있음->문제
@@ -26,4 +26,5 @@ public class SpeakerMain1 {
         //이러한 문제를 막기 위해 외부 접근을 막아야 함
         //좋은 프로그램은 무한한 자유가 아닌 적절한 제한이 있는 프로그램임
     }
+
 }
