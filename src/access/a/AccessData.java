@@ -17,6 +17,7 @@ public class AccessData {
         System.out.println("privateField = " + privateField);
     }
 
+    //innderAccess 메서드는 내부호출을 보여줌, 자기자신에게 접근, 따라서 private를 포함한 모든 곳에 접근 가능
     public void innerAccess() {
         System.out.println("내부 호출");
         publicField=100;
