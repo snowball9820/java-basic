@@ -39,3 +39,9 @@ public class JavaMemoryMain1 {
 //method1()은 method2()를 호출
 //method2()스택 프레임 생성
 //method2()는 m2 지역변수(매개변수포함)를 가지므로 해당 지역 변수가 스택 프레임에 포함
+
+//method2가 종료되면 method2 스택프레임이 제거되고 매개면수 m2도 제거됨
+//method1으로 돌아가는데 처음부터 시작하는 것이 아니라 method1에서 method2를 호출한 지점으로 돌아감
+//method1이 종료되면 스택프레임 제거 후 지역변수 m1,cal도 제거되고 main으로 돌아감
+//main이 종료됨
+//더 이상 호출할 메서드도 없고 스택프레임도 비워지고 자바는 프로그램을 정리하고 종료함
