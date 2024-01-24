@@ -6,12 +6,18 @@ public class DataCountMain1 {
     public static void main(String[] args) {
         Data1 data1 = new Data1("A");
         System.out.println("A count = " + data1.count);
+        //처음 Data1("A")인스턴스를 생성하면 count 값은 0으로 초기화
+        //생성자에서 count++을 호출했으므로 count 값은 1이 됨
 
         Data1 data2 = new Data1("B");
         System.out.println("B count = " + data1.count);
+        //처음 Data1("B")인스턴스를 생성하면 완전히 새로운 인스턴스가 생성됨, count 값은 0으로 초기화
+        //생성자에서 count++을 호출했으므로 count 값은 1이 됨
 
         Data1 data3 = new Data1("C");
         System.out.println("C count = " + data1.count);
+        //처음 Data1("C")인스턴스를 생성하면 완전히 새로운 인스턴스가 생성됨, count 값은 0으로 초기화
+        //생성자에서 count++을 호출했으므로 count 값은 1이 됨
 
     }
 }
