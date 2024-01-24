@@ -2,6 +2,8 @@ package memory;
 
 
 public class JavaMemoryMain2 {
+    //스택과 힙영역 같이
+
     public static void main(String[] args) {
         System.out.println("main start");
         method1();
