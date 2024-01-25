@@ -19,6 +19,12 @@ public class DecoData {
         staticMethod(); //정적 메서드 접근 //클래스 소속 DecoData. 생략
     }
 
+    //외부에서 참조값이 오면 다 호출할 수 있게 됨 static으로 선언해도 참조값이 생겼으니까
+    public static void staticCall(DecoData data ) { //data=x001 참조값 생김
+        data.instanceValue++;
+        data.instanceMethod();
+    }
+
     public void instanceCall() {
         instanceValue++; //인스턴스 변수에 접근
         instanceMethod(); //인스턴스 메서드에 접근
