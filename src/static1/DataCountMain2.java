@@ -13,7 +13,7 @@ public class DataCountMain2 {
         //Data("B") 인스턴스를 생성하면 생성자를 통해 Counter 인스턴스에 있는 count값을 하나 증가시킴
 
 
-        Data2 data3= new Data2("C", counter);//Data2에서 counter의 값을 하나 증가시켜줌 2->3
+        Data2 data3 = new Data2("C", counter);//Data2에서 counter의 값을 하나 증가시켜줌 2->3
         System.out.println("C count = " + counter.count);
         //Data("C") 인스턴스를 생성하면 생성자를 통해 Counter 인스턴스에 있는 count값을 하나 증가시킴
 
@@ -24,9 +24,7 @@ public class DataCountMain2 {
 
         //여기서 불편한 점
         //Data2와 관련된 일인데 Counter라는 별도의 클래스를 추가 사용
-        //생성자의 매개변수도 추가됨, 생성자가 복자해지고 생성자를 호출하는 부분도 복잡해짐
-
-
+        //생성자의 매개변수도 추가됨, 생성자가 복잡해지고 생성자를 호출하는 부분도 복잡해짐
 
 
     }
