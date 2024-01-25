@@ -13,6 +13,22 @@ public class DataCountMain3 {
         Data3 data3 = new Data3("C");
         System.out.println("C count = " + Data3.count);
         //static에 있는 count1 증가
+
+        //추가
+        //인스턴스를 통한 접근
+        Data3 data4 = new Data3("D");
+        System.out.println(data4.count);
+        //인스턴스로 접근했는데 static에 있네? 그거 씀
+        //근데 동작이 안됨
+        //인스턴스 변순가???헷갈림
+        //정적 변수의 경우 인스턴스로 접근하는거 비추천->코드 읽을 때 마치 인스턴스 변수에 접근하는 것 처럼 오해할 수 있음
+
+        //클래스를 통한 접근
+        System.out.println(Data3.count);
+        //바로 클래스로 접근
+        //클ㄹ
+
+
     }
 }
 //정적 변수에 접근하기 위해 Data3.count와 같이 클래스명에 . 을 사용함, 클래스에 직접 접근하는 것 처럼 느껴짐
@@ -31,3 +47,5 @@ public class DataCountMain3 {
 //정리
 //static변수는 쉽게 이야기해서 붕어빵 틀이 특별히 관리하는 변수! 붕어빵 틀은 1개니까 클래스 변수도 하나만 존재
 //인스턴스는 붕어빵 인스턴스 수만큼 변수 존재...
+
+
