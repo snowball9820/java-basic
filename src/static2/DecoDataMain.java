@@ -15,7 +15,7 @@ public class DecoDataMain {
 //instanceValue = 1
 //staticValue = 2 //원래부터 있던 static 변수라 2가 됨
 
-        System.out.println("2.인스턴스 호출2");
+        System.out.println("3.인스턴스 호출2");
         DecoData data2 = new DecoData();
         data2.instanceCall();
 //2.인스턴스 호출2
@@ -24,6 +24,14 @@ public class DecoDataMain {
 
         DecoData.staticCall(data1);
 
+        //추가
+        //인스터스를 통한 접근
+        DecoData data3 = new DecoData();
+        data3.staticCall(); //인스턴스로 먼저 접근하고 이건 클래스에 있어 하고 보냄
+
+
+        //클래스를 통한 접근
+        DecoData.staticCall();
 
     }
 }
