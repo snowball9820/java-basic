@@ -1,9 +1,17 @@
 package static2;
-
+//import static static2.DecoData.staticCall; //클래스명 생략가능
+//import static static2.DecoData.*; //클래스명 생략가능
 public class DecoDataMain {
     public static void main(String[] args) {
         System.out.println("1.정적 호출");
         DecoData.staticCall();
+        DecoData.staticCall();
+        DecoData.staticCall();
+        DecoData.staticCall();
+        DecoData.staticCall();
+        //위 처럼 반복적으로 사용할 때
+        //import static static2.DecoData.staticCall; //클래스명 생략가능
+        //staticCall(); 이렇게만 쓰면 됨
 
         System.out.println("2.인스턴스 호출1");
         DecoData data1 = new DecoData();
