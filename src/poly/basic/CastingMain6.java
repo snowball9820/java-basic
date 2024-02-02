@@ -20,7 +20,7 @@ public class CastingMain6 {
         //Child인스턴스인 경우 childMethod() 실행
         if (parent instanceof Child child) {//여기에서 변수 선언
             System.out.println("Child 인스턴스 맞음");
-//            Child child = (Child) parent;//다운캐스팅 애를 지워도 됨
+//            Child child = (Child) parent;//다운 캐스팅을 따로 해줬는데 지워도 됨
             child.childMethod();
         } else {
             System.out.println("Child 인스턴스 아님");
