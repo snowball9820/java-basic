@@ -2,9 +2,14 @@ package poly.ex2;
 
 public class AnimalPolyMain1 {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        Cat cat = new Cat();
-        Caw caw = new Caw();
+//        Dog dog = new Dog();
+//        Cat cat = new Cat();
+//        Caw caw = new Caw();
+
+        //Animal로 바꿔도 됨 부모라서 다 담기 가능
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+        Animal caw = new Caw();
 
         soundAnimal(dog);
         soundAnimal(cat);
