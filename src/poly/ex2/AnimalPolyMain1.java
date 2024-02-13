@@ -11,6 +11,7 @@ public class AnimalPolyMain1 {
         Animal cat = new Cat();
         Animal caw = new Caw();
 
+        //마지막으로 오버라이드 된 것들이 호출 됨
         soundAnimal(dog);
         soundAnimal(cat);
         soundAnimal(caw);
