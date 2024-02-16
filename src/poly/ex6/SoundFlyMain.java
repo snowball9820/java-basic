@@ -10,6 +10,10 @@ public class SoundFlyMain {
         soundAnimal(bird);
         soundAnimal(chicken);
 
+//        flyAnimal(dog);
+        flyAnimal(bird);
+        flyAnimal(chicken);
+
 
     }
     //AbstractAnimal 사용 가능
