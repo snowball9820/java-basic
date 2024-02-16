@@ -9,5 +9,9 @@ public class DiamondMain {
         InterfaceB b = new Child();
         b.methodB();
         b.methodCommon();
+
+        Child c = new Child();
+        c.methodCommon();//얘는 바로 Child에서 찾음
+
     }
 }
