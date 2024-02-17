@@ -8,6 +8,5 @@ public class CarMain0 {
         driver.setK3car(k3Car); //이 시점에 k3 인스턴스를 가지게 됨
         driver.drive();
 
-
     }
 }
