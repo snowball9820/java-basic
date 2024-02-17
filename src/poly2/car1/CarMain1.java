@@ -13,5 +13,15 @@ public class CarMain1 {
         Model3Car model3Car = new Model3Car();
         driver.setCar(model3Car);//의존관계주입 객체의존관계/ model3Car를 호출, Driver의 Car car 필드가 Model3Car의 인스턴스를 참조하도록 변경
         driver.driver();//호출하면 x002를 참조/ Car 필드가 Car 타입이므로 Car타입을 찾아서 실행하지만 메서드 오버라이딩에 의해 Model3Car 기능 호출
+
+        //OCP원칙 확인-새로운 차량 추가(model3->newCar)
+        NewCar newCar = new NewCar();
+        driver.setCar(newCar);//의존관계주입 객체의존관계/ newCar를 호출, Driver의 Car car 필드가 newCar의 인스턴스를 참조하도록 변경
+        driver.driver();//호출하면 x003를 참조/ Car 필드가 Car 타입이므로 Car타입을 찾아서 실행하지만 메서드 오버라이딩에 의해 newCar 기능 호출
     }
 }
+
+//지금 새로운 차량을 계속 추가해도 Driver의 코드는 전혀 변경하지 않음
+//운전할 수 있는 차 종류가 늘어나도 Car를 사용하는 Driver의 코드는 변경X
+//main() 일부를 제외한 프로그램의 핵심 부분의 코드는 전혀 수정X
+
