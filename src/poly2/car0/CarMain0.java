@@ -9,7 +9,7 @@ public class CarMain0 {
 
         //추가
         Model3Car model3Car = new Model3Car();
-        driver.setK3car(null);
+        driver.setK3car(null);//K3car에 null을 넣어줘서 Model3Car로 바꿔탐
         driver.setModel3Car(model3Car);
 
         driver.drive();
