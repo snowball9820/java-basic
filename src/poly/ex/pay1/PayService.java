@@ -16,7 +16,7 @@ public class PayService {
 //            System.out.println("결제 수단이 없습니다.");
 //        }
         //1.결제 수단 선택 -> 메서드로 뽑은 결과물
-        Pay pay = findPay(option);
+        Pay pay = PayStore.findPay(option); //역할에만 의존하게 됨
         //2.실제결제
         //NullPointerException 처리
         if (pay != null) {
@@ -31,15 +31,16 @@ public class PayService {
 
     }
 
-    public Pay findPay(String option) {
-        Pay pay;
-        if (option.equals("kakao")) {
-            return new KakaoPay();
-        } else if (option.equals("naver")) {
-            return new NaverPay();
-        } else {
-            System.out.println("결제 수단이 없습니다.");
-            return null;
-        }
-    }
+    //PayStore에 따로 뺌
+//    public Pay findPay(String option) {
+//        Pay pay;
+//        if (option.equals("kakao")) {
+//            return new KakaoPay();
+//        } else if (option.equals("naver")) {
+//            return new NaverPay();
+//        } else {
+//            System.out.println("결제 수단이 없습니다.");
+//            return null;
+//        }
+//    }
 }
