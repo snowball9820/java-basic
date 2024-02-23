@@ -12,6 +12,9 @@ public class PayService {
         } else if (option.equals("naver")) {
             NaverPay naverPay = new NaverPay();
             result = naverPay.pay(amount);
+        } else if (option.equals("new")) {
+            NewPay newPay = new NewPay();
+            result = newPay.pay(amount);
         } else {
             System.out.println("결제 수단이 없습니다.");
             result = false;
