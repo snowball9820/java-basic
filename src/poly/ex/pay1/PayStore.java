@@ -2,6 +2,7 @@ package poly.ex.pay1;
 
 //결제수단을 관리하고 보관
 public abstract class PayStore {
+    //*코드 변경이 있는 부분
     public static Pay findPay(String option) {
         if (option.equals("kakao")) {
             return new KakaoPay();
@@ -10,8 +11,7 @@ public abstract class PayStore {
         } else if (option.equals("new")) {
             return new NewPay();
         } else {
-            System.out.println("결제 수단이 없습니다.");
-            return null;
+            return new DefaultPay();
         }
     }
 }
